@@ -27,7 +27,7 @@ h1 {
 
 .info {
     margin-bottom: 25px;
-    
+
 }
 
 input[type="text"], input[type="password"] {
@@ -90,4 +90,30 @@ button:active {
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: block;
+        padding: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        border-radius: 10px;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: calc(100% - 30px);
+        margin: 10px 0;
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        margin-top: 10px;
+    }
 }
